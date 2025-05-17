@@ -1,0 +1,6 @@
+torch
+chromadb
+sentence-transformers
+gradio==4.44.1
+psutil
+gunicorn

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  semantic_product_app:
+    build: .
+    image: semantic_product_chromadb_app:latest
+    container_name: semantic_product
+    ports:
+      - 7860:7860
+      - 7861:7861
+    volumes:
+      - ./app.py:/app/app.py
+      - ./data.py:/app/data.py
+      - chromadb_data:/app/local_data
+
+volumes:
+  chromadb_data:
+    driver: local
