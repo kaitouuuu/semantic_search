@@ -64,19 +64,12 @@ This project is a semantic search engine for product data, powered by ChromaDB a
 ## Project Structure
 
 - `/local_data`: Contains the SQLite database (`chroma.sqlite3`) for storing product embeddings and metadata.
-- `/log`: Directory for application logs.
-- `app.py`: Main application file for running the system.
-- `README.md`: Documentation for the project.
+- `/log`: Contains application log files for tracking system events and debugging purposes.
+- `app.py`: The main entry point for the FastAPI-based REST API, enabling programmatic access to the semantic search functionality.
+- `data.py`: Provides the Gradio-powered web interface, allowing users to perform searches and manage product data interactively.
 
 ---
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
+[**Le Nguyen Minh Hieu** ](https://github.com/kaitouuuu)
